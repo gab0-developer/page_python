@@ -225,6 +225,8 @@ section{
     width: 90%;
     height: 100vh;
     margin: auto;
+
+    overflow: scroll;
 }
 .container-categorias{
     width: 100%;
@@ -270,7 +272,30 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
+.container-caja .caja .contenido-caja{
+    padding: 0.5rem;
+}
+.container-caja .caja .imagen-caja{
+    padding: 0.5rem;
+}
+
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    body{
+        font-size: 12px;
+    }
+    .container-categorias .categorias{
+        width: auto;
+    }
+    .container-caja .caja .imagen-caja img{
+        width: 100%;
+        
+    }
+}
+
 
 /* ------------------------------ */
 /* -------------SECTION-4----------------- */
@@ -370,11 +395,35 @@ section{
     margin-top: 0;
 }
 
+/* Estilo responsive */
+@media (max-width: 768px) {
+    #section-4 .container-cards{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        width: auto;
+    }
+    .card .content .image img{
+        width: 70%;
+    }
+}
 
 /* ------------------------------ */
 /* -------------SECTION-5----------------- */
 /* ------------------------------ */
+#section-5{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
 
+    padding: 0.5rem;
+    overflow: scroll;
+}
 .container-industrias {
     width: 100%;
     color: #fff;
